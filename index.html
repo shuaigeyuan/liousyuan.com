@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Thrilling Online Survival Game</title>
+    <meta name="description" content="Play Monster Survivors, an exciting online survival game where you battle hordes of monsters in an ever-changing world.">
+    <link rel="canonical" href="https://monstersurvivors.com/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            black: '#1d1d1f',
+                            white: '#ffffff',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .game-container {
+                aspect-ratio: 16/9;
+                max-height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray text-apple-black min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-apple-black text-white py-6">
+        <div class="container mx-auto px-4 md:px-8">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">Monster Survivors</div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#game" class="hover:text-apple-blue transition">Play Now</a></li>
+                    <li><a href="#about" class="hover:text-apple-blue transition">About</a></li>
+                    <li><a href="#features" class="hover:text-apple-blue transition">Features</a></li>
+                    <li><a href="#tips" class="hover:text-apple-blue transition">Tips & Tricks</a></li>
+                </ul>
+                <button class="md:hidden" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-b from-apple-black to-gray-800 text-white">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow">Monster Survivors</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Survive the endless waves of monsters in this thrilling action-packed adventure!</p>
+            <a href="#game" class="bg-apple-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Play Now</a>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="py-12 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Play Monster Survivors</h2>
+            <div class="game-container w-full mx-auto border-4 border-apple-black rounded-lg overflow-hidden shadow-xl">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="w-full h-full" 
+                        title="Monster Survivors Game" 
+                        allowfullscreen></iframe>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-apple-darkgray">For the best experience, play in fullscreen mode</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-apple-gray">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">About Monster Survivors</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg mb-6">Monster Survivors is an action-packed survival game where you must fend off endless waves of monsters. As time progresses, the challenges become more intense, requiring strategic thinking and quick reflexes.</p>
+                <p class="text-lg mb-6">In this thrilling adventure, you'll collect power-ups, unlock new abilities, and discover unique weapons to enhance your survival chances. The game features procedurally generated levels, ensuring a fresh experience every time you play.</p>
+                <p class="text-lg">Whether you're a casual gamer looking for a quick adrenaline rush or a hardcore player seeking a challenging experience, Monster Survivors offers something for everyone with its accessible controls and deep progression system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Game Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">🎮</div>
+                    <h3 class="text-xl font-bold mb-3">Intuitive Controls</h3>
+                    <p>Easy to learn controls that allow for complex strategies and maneuvers as you battle through hordes of monsters.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">⚔️</div>
+                    <h3 class="text-xl font-bold mb-3">Diverse Weapons</h3>
+                    <p>Discover and master a wide array of weapons, each with unique attack patterns and special abilities.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">👾</div>
+                    <h3 class="text-xl font-bold mb-3">Varied Enemies</h3>
+                    <p>Face off against numerous monster types with different behaviors, attack patterns, and weaknesses.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-3">Progression System</h3>
+                    <p>Level up your character, unlock new abilities, and enhance your stats to become more powerful.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-3">Dynamic Environments</h3>
+                    <p>Explore procedurally generated maps with various terrains and obstacles that affect gameplay.</p>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl shadow-md">
+                    <div class="text-apple-blue text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold mb-3">Challenging Bosses</h3>
+                    <p>Test your skills against epic boss monsters with unique mechanics and devastating attacks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-12 bg-apple-gray">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Tips & Tricks</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-3">Movement is Key</h3>
+                    <p>Never stop moving! Constantly reposition yourself to avoid being surrounded by monsters. Use open spaces to your advantage.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-3">Prioritize Upgrades</h3>
+                    <p>Focus on a few key weapons and upgrades rather than spreading your resources too thin. Specialization often beats generalization.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-3">Collect Experience Gems</h3>
+                    <p>Don't forget to collect the experience gems dropped by defeated monsters. They're essential for leveling up and becoming stronger.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Watch for Power-ups</h3>
+                    <p>Special power-ups can turn the tide of battle. Keep an eye out for them and use them strategically when facing tough situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-apple-black text-white py-8">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold">Monster Survivors</h2>
+                    <p class="text-apple-darkgray">© 2025 MonsterSurvivors.com. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-apple-darkgray hover:text-apple-blue transition">Privacy Policy</a>
+                    <a href="#" class="text-apple-darkgray hover:text-apple-blue transition">Terms of Service</a>
+                    <a href="#" class="text-apple-darkgray hover:text-apple-blue transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button[aria-label="Menu"]');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'fixed inset-0 bg-apple-black bg-opacity-95 z-50 flex flex-col items-center justify-center text-white text-xl hidden';
+            mobileMenu.innerHTML = `
+                <button class="absolute top-6 right-6" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <ul class="flex flex-col space-y-6 text-center">
+                    <li><a href="#game" class="block py-2 px-4 hover:text-apple-blue transition">Play Now</a></li>
+                    <li><a href="#about" class="block py-2 px-4 hover:text-apple-blue transition">About</a></li>
+                    <li><a href="#features" class="block py-2 px-4 hover:text-apple-blue transition">Features</a></li>
+                    <li><a href="#tips" class="block py-2 px-4 hover:text-apple-blue transition">Tips & Tricks</a></li>
+                </ul>
+            `;
+            document.body.appendChild(mobileMenu);
+
+            const closeButton = mobileMenu.querySelector('button[aria-label="Close Menu"]');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            });
+
+            closeButton.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            });
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    document.body.classList.remove('overflow-hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
